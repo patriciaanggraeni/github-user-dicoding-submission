@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextViewStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">20sp</item>
+        <item name="android:text">@string/dummy_username</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="ImageViewStyle" parent="">
+        <item name="android:src">@drawable/user_dummy</item>
+        <item name="android:contentDescription">@string/content_description</item>
+    </style>
+</resources>

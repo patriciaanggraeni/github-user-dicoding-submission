@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">GitHubUser</string>
+    <string name="dummy_username">username</string>
+    <string name="content_description">user_avatar</string>
 </resources>
