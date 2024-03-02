@@ -1,6 +1,6 @@
 package com.example.githubuser.domain.model
 
-data class UserDto(
+data class User(
     val avatarUrl: String,
     val eventsUrl: String,
     val followersUrl: String,

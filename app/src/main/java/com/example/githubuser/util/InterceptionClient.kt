@@ -9,7 +9,7 @@ object InterceptionClient {
         val request = it.request()
         val newRequest = request
             .newBuilder()
-            .header("Authorization", "TOKEN")
+            .header("Authorization", "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")
             .build()
 
         it.proceed(newRequest)
