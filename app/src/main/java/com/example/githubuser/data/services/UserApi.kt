@@ -1,6 +1,7 @@
 package com.example.githubuser.data.services
 
-import com.example.githubuser.data.response.UserDetail
+import com.example.githubuser.data.remote.response.SearchResult
+import com.example.githubuser.data.remote.response.UserDetail
 import com.example.githubuser.domain.model.User
 import retrofit2.Call
 import retrofit2.http.GET
@@ -13,7 +14,7 @@ interface UserApi {
     fun getAllUsers(): Call<List<User>>
 
     @GET("search/users")
-    fun searchUsers(@Query("q") username: String): Call<List<User>>
+    fun searchUsers(@Query("q") username: String): Call<SearchResult>
 
     @GET("users/{username}")
     fun getUserDetail(@Path("username") username: String): Call<UserDetail>

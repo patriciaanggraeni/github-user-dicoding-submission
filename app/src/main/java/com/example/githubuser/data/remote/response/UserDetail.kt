@@ -1,4 +1,4 @@
-package com.example.githubuser.data.response
+package com.example.githubuser.data.remote.response
 
 data class UserDetail(
     val login: String,
