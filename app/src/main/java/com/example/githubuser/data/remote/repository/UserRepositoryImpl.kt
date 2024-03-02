@@ -2,6 +2,7 @@ package com.example.githubuser.data.remote.repository
 
 import com.example.githubuser.data.remote.response.SearchResult
 import com.example.githubuser.data.remote.response.UserDetail
+import com.example.githubuser.data.services.Api
 import com.example.githubuser.data.services.UserApi
 import com.example.githubuser.domain.model.User
 import com.example.githubuser.domain.repository.UserRepository
@@ -9,9 +10,9 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class UserRepositoryImpl(
-    private val userApi: UserApi
-): UserRepository {
+class UserRepositoryImpl: UserRepository {
+
+    private val userApi = Api.userApi
 
     override fun getAllUsers(callback: (Result<List<User>>) -> Unit) {
         userApi.getAllUsers().enqueue(object: Callback<List<User>> {
