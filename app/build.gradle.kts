@@ -1,7 +1,6 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
@@ -51,8 +50,9 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
+
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation("com.squareup.okhttp3:logging-interceptor")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
 
     implementation("androidx.fragment:fragment-ktx:1.6.2")
@@ -61,6 +61,7 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0")
 
     implementation("io.coil-kt:coil:2.6.0")
+    implementation("com.intuit.ssp:ssp-android:1.1.0")
     implementation("androidx.viewpager2:viewpager2:1.0.0")
     implementation("androidx.recyclerview:recyclerview:1.3.2")
 
