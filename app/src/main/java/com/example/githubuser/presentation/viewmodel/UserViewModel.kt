@@ -1,14 +1,20 @@
 package com.example.githubuser.presentation.viewmodel
 
+import android.app.Application
+import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
 import com.example.githubuser.data.remote.repository.UserRepositoryImpl
 import com.example.githubuser.data.remote.response.SearchResult
 import com.example.githubuser.data.remote.response.UserDetail
 import com.example.githubuser.domain.model.User
 
-class UserViewModel(private val userRepository: UserRepositoryImpl) : ViewModel() {
+class UserViewModel(
+    private val application: Application,
+    private val userRepository: UserRepositoryImpl
+) : AndroidViewModel(application) {
 
     private val _users = MutableLiveData<Result<List<User>>>()
     val users: LiveData<Result<List<User>>> = _users
