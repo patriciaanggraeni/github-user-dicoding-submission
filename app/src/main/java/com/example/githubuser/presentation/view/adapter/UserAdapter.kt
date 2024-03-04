@@ -1,11 +1,9 @@
-package com.example.githubuser.util
+package com.example.githubuser.presentation.view.adapter
 
 import android.view.LayoutInflater
-import android.view.MenuItem
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewbinding.ViewBinding
-import com.example.githubuser.domain.model.User
 
 class UserAdapter<T: Any, VB: ViewBinding>(
     private val binding: (inflater: LayoutInflater, parent: ViewGroup, attachToParent: Boolean) -> VB,
