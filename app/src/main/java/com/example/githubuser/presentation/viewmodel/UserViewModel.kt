@@ -1,13 +1,11 @@
 package com.example.githubuser.presentation.viewmodel
 
+import com.example.githubuser.data.remote.response.SearchResult
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.ViewModelProvider
 import com.example.githubuser.data.remote.repository.UserRepositoryImpl
-import com.example.githubuser.data.remote.response.SearchResult
 import com.example.githubuser.data.remote.response.UserDetail
 import com.example.githubuser.domain.model.User
 

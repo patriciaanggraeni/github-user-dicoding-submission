@@ -2,4 +2,8 @@
     <string name="app_name">GitHubUser</string>
     <string name="dummy_username">username</string>
     <string name="content_description">user_avatar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="setting">setting</string>
+    <string name="search">search</string>
 </resources>

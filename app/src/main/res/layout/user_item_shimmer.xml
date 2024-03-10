@@ -19,16 +19,16 @@
 
         <ImageView
             android:id="@+id/user_avatar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_marginEnd="20dp"
-            style="@style/ImageViewStyle"/>
+            android:background="@color/gray"/>
 
         <TextView
             android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/TextViewStyle"/>
+            android:background="@color/gray"/>
 
     </LinearLayout>
 

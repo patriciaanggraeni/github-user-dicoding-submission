@@ -1,10 +1,9 @@
-package com.example.githubuser.util
+package com.example.githubuser.presentation.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.githubuser.data.remote.repository.UserRepositoryImpl
-import com.example.githubuser.presentation.viewmodel.UserViewModel
 
 class UserViewModelFactory(
     private val application: Application,

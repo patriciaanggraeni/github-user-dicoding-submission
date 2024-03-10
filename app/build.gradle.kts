@@ -62,6 +62,7 @@ dependencies {
 
     implementation("io.coil-kt:coil:2.6.0")
     implementation("com.intuit.ssp:ssp-android:1.1.0")
+    implementation("com.facebook.shimmer:shimmer:0.5.0")
     implementation("androidx.viewpager2:viewpager2:1.0.0")
     implementation("androidx.recyclerview:recyclerview:1.3.2")
 
