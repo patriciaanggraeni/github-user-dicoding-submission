@@ -3,7 +3,6 @@ package com.example.githubuser.data.remote.repository
 import com.example.githubuser.data.remote.response.SearchResult
 import com.example.githubuser.data.remote.response.UserDetail
 import com.example.githubuser.data.services.Api
-import com.example.githubuser.data.services.UserApi
 import com.example.githubuser.domain.model.User
 import com.example.githubuser.domain.repository.UserRepository
 import retrofit2.Call
@@ -43,7 +42,7 @@ class UserRepositoryImpl: UserRepository {
             override fun onFailure(call: Call<UserDetail>, t: Throwable) {
                 callback(Result.failure(t))
             }
-        } )
+        })
     }
 
     override fun searchUser(username: String, callback: (Result<SearchResult>) -> Unit) {
