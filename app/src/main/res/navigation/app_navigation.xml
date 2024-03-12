@@ -21,7 +21,11 @@
         android:id="@+id/detailFragment"
         android:name="com.example.githubuser.presentation.view.fragments.DetailFragment"
         android:label="User Details"
-        tools:layout="@layout/fragment_detail" />
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="username"
+            app:argType="string" />
+    </fragment>
     <fragment
         android:id="@+id/aboutFragment"
         android:name="com.example.githubuser.presentation.view.fragments.AboutFragment"
